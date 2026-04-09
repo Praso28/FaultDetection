@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-03-18T11:51:16Z",
+  "environment": "live-free5gc-vm",
+  "collector_connected": true,
+  "scenario_summary": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0
+  },
+  "scenarios": [
+    {
+      "name": "SMF Down and Recover",
+      "fault_id": "F1",
+      "target_nf": "SMF",
+      "expected_mode": "ACT",
+      "expected_action": "restart_nf",
+      "actual_mode": "ACT",
+      "actual_action": "restart_nf",
+      "passed": true,
+      "detail": "scenario_passed"
+    },
+    {
+      "name": "UPF Congestion Handling",
+      "fault_id": "F2",
+      "target_nf": "UPF",
+      "expected_mode": "ACT",
+      "expected_action": "scale_up_nf",
+      "actual_mode": "ACT",
+      "actual_action": "scale_up_nf",
+      "passed": true,
+      "detail": "scenario_passed"
+    },
+    {
+      "name": "Network Degradation Advisory",
+      "fault_id": "F3",
+      "target_nf": "UPF",
+      "expected_mode": "ADVISE",
+      "expected_action": "no_action",
+      "actual_mode": "ADVISE",
+      "actual_action": "no_action",
+      "passed": true,
+      "detail": "scenario_passed"
+    },
+    {
+      "name": "Traffic Surge Advisory",
+      "fault_id": "F4",
+      "target_nf": "AMF",
+      "expected_mode": "ADVISE",
+      "expected_action": "no_action",
+      "actual_mode": "ADVISE",
+      "actual_action": "no_action",
+      "passed": true,
+      "detail": "scenario_passed"
+    },
+    {
+      "name": "Config Anomaly Advisory",
+      "fault_id": "F5",
+      "target_nf": "NRF",
+      "expected_mode": "ADVISE",
+      "expected_action": "no_action",
+      "actual_mode": "ADVISE",
+      "actual_action": "no_action",
+      "passed": true,
+      "detail": "scenario_passed"
+    }
+  ]
+}

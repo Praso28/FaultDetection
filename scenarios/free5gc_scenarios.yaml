@@ -1,0 +1,34 @@
+- name: SMF Down and Recover
+  fault_id: F1
+  target_nf: SMF
+  duration_s: 120
+  expected_mode: ACT
+  expected_action: restart_nf
+
+- name: UPF Congestion Handling
+  fault_id: F2
+  target_nf: UPF
+  duration_s: 120
+  expected_mode: ACT
+  expected_action: scale_up_nf
+
+- name: Network Degradation Advisory
+  fault_id: F3
+  target_nf: UPF
+  duration_s: 120
+  expected_mode: ADVISE
+  expected_action: no_action
+
+- name: Traffic Surge Advisory
+  fault_id: F4
+  target_nf: AMF
+  duration_s: 120
+  expected_mode: ADVISE
+  expected_action: no_action
+
+- name: Config Anomaly Advisory
+  fault_id: F5
+  target_nf: NRF
+  duration_s: 120
+  expected_mode: ADVISE
+  expected_action: no_action

@@ -1,0 +1,9 @@
+{
+  "detection_accuracy": 100.0,
+  "false_positive_rate": 1.0,
+  "recovery_success_rate": 100.0,
+  "mixed_anomaly_rate": 100.0,
+  "runs_per_fault": 100,
+  "baseline_runs": 100,
+  "mixed_runs": 100
+}
